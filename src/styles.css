@@ -1,0 +1,44 @@
+/* * {
+  outline: 1px red dotted;
+} */
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightblue;
+}
+
+header section {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+main > section,
+footer {
+  text-align: center;
+}
+
+main section:nth-child(1) {
+  flex: 2;
+}
+
+/* main section:nth-child(1) {
+  flex: 2;
+} */
+
+.temperature {
+  width: 35vw;
+  height: 35vw;
+}
+
+img {
+  /* object-fit: cover; */
+  width: 90%;
+  height: 90%;
+}

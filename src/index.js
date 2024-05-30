@@ -16,7 +16,9 @@ document
   .addEventListener("click", () => {
     console.log("Hello");
 
-    document.querySelector(".temperature > p").textContent = "test";
+    document.querySelector(
+      ".temperature > p"
+    ).textContent = `Hello ${temperatureInputElement.value}`;
 
     ///change img
     const temperatureArr = ["winter", "fall", "spring", "hot"];
