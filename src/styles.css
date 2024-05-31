@@ -1,38 +1,62 @@
 * {
-  outline: 1px red dotted;
+  outline: 1px black solid;
   box-sizing: border-box;
 }
 
-html,
-body,
-main {
-  margin: 1%;
-  padding: 1%;
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* margin: 0; */
+  /* padding: 0; */
+  width: 97%;
+  height: 97%;
 }
 
 header > nav > ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 
 header > section > h1 {
   text-align: center;
 }
 
-main section {
-  margin: 1%;
-  padding: 1%;
-}
-
 main {
   display: flex;
-  /* width: 10%; */
-  /* height: 10%; */
-  /* display: inline-block; */
-  /* text-align: center; */
-  /* display: flex; */
 }
 
-/* TODO:  */
+/* TODO:  why is my sections not staying with my body*/
+
+.container {
+  flex: 1;
+}
+
+.aside {
+  /* height: 20%; */
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+picture {
+  width: 93%;
+  height: 93%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside > picture > img {
+  max-width: 98%;
+  max-height: 70%;
+  object-fit: cover;
+  /* margin: 1%; */
+}

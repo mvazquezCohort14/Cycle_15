@@ -6,7 +6,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
 
 ///temperature
 
-///grab temperature input element
+///grab, temperature input element
 const temperatureInputElement = document.querySelector(".temperature > input");
 console.log(temperatureInputElement);
 
@@ -21,9 +21,10 @@ document
     ).textContent = `Hello ${temperatureInputElement.value}`;
 
     ///change img
-    const temperatureArr = ["winter", "fall", "spring", "hot"];
+    const temperatureArr = ["winterWide", "fallWide", "spring@ide", "hotWide"];
 
-    let temperature;
+    let temperature = temperatureArr[0];
+    console.log(temperature);
 
     if (temperatureInputElement.value > 78) {
       temperature = temperatureArr[3];
@@ -31,11 +32,9 @@ document
       temperature = temperatureArr[2];
     } else if (temperatureInputElement.value > 55) {
       temperature = temperatureArr[1];
-    } else {
-      temperature = temperatureArr[0];
     }
 
     document.querySelector(
-      ".temperature > img"
+      ".aside > picture > img"
     ).src = `./assets/${temperature}.jpg`;
   });
