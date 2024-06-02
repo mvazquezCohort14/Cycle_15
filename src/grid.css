@@ -20,6 +20,20 @@ body {
 }
 
 .item-1 {
-  grid-row: 1/6;
-  grid-column: 1/1;
+  grid-row: 1/1;
+  grid-column: 2/10;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.item-2 {
+  grid-row: 5/3;
+  grid-column: 6/7;
+}
+.item-3 {
+  grid-row: 1/4;
+  grid-column: 1/3;
 }
