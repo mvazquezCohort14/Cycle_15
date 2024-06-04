@@ -1,5 +1,5 @@
 * {
-  outline: 1px red dotted;
+  /* outline: 1px red dotted; */
 }
 
 html,
@@ -28,10 +28,43 @@ h1 {
 /* setting to flex. height is 90% of body */
 main {
   display: flex;
-  height: 90%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
-section {
+.carousel {
+  /* border-radius: 50%; */
+  border: 1px solid black;
+  width: 300px;
+  height: 600px;
+}
+
+.slider {
   /* height: 10%; */
-  flex-grow: 1;
+  display: flex;
+  width: 1800px;
+  height: 600px;
+  transition: 1s ease;
+}
+
+.section {
+  /* border-radius: 100%; */
+  border: 1px black solid;
+  /* width: 300px; */
+  display: flex;
+
+  /* flex: 1; */
+}
+
+img {
+  /* border-radius: 50%; */
+  max-width: 100%;
+  max-height: 100%;
+}
+.button {
+  /* text-align: center; */
+  width: fit-content;
+  margin: 1% auto;
 }
