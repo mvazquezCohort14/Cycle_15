@@ -17,7 +17,7 @@ selectElement.addEventListener("click", () => {
 
   let temperature = temperatureArr[0];
 
-  let temperatureP = `It's very cold outside.`;
+  let temperatureP = `It's cold outside.`;
 
   if (selectElement.value > 78) {
     temperatureP = `It's HOT outside`;
@@ -43,4 +43,6 @@ selectElement.addEventListener("click", () => {
 ///grab temperature submit button
 document
   .querySelector(".temperature > button")
-  .addEventListener("click", () => {});
+  .addEventListener("click", () => {
+    console.log("This button was for the input.");
+  });
