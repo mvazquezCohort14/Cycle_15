@@ -12,18 +12,22 @@ console.log(isLoggedIn);
 let translate = 0;
 
 const sliderElement = document.querySelector(".slider");
+console.dir(sliderElement);
+
+const slidewidth = sliderElement.offsetWidth;
+console.log(slidewidth);
 
 document.querySelector(".left").addEventListener("click", () => {
   if (translate < 0) {
-    translate += 225;
+    translate += 400;
     sliderElement.style.transform = "translateX(" + translate + "px)";
   }
 });
 
 document.querySelector(".right").addEventListener("click", () => {
   console.log("hello");
-  if (translate > -1500) {
-    translate -= 225;
+  if (translate > -2500) {
+    translate -= 400;
     sliderElement.style.transform = "translateX(" + translate + "px)";
   }
 });

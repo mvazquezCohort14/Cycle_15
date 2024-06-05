@@ -1,7 +1,5 @@
 const left = document.querySelector(".left");
-console.log(left);
 const right = document.querySelector(".right");
-console.log(right);
 const carousel = document.querySelector(".slider");
 
 let translate = 0;

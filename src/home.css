@@ -30,38 +30,35 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   height: 100vh;
 }
 
 .carousel {
-  /* border-radius: 50%; */
   border: 1px solid black;
-  width: 300px;
-  height: 600px;
+  position: relative;
+  width: 99%;
+  overflow: hidden;
+  /* max-width: 1200px; */
+  /* margin: auto; */
 }
 
 .slider {
-  /* height: 10%; */
   display: flex;
-  width: 1800px;
-  height: 600px;
+  /* flex-direction: column; */
+  width: 100%;
+  /* margin: 0 auto; */
   transition: 1s ease;
 }
 
-.section {
-  /* border-radius: 100%; */
-  border: 1px black solid;
-  /* width: 300px; */
-  display: flex;
-
-  /* flex: 1; */
+@media (max-width: 380px) {
+  .slider {
+    flex-direction: column;
+  }
 }
 
 img {
-  /* border-radius: 50%; */
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
 }
 .button {
   /* text-align: center; */
