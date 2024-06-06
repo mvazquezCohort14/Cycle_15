@@ -9,25 +9,26 @@ console.log(isLoggedIn);
 //   window.location.href = "/";
 //
 
-let translate = 0;
-
 const sliderElement = document.querySelector(".slider");
 console.dir(sliderElement);
 
-const slidewidth = sliderElement.offsetWidth;
-console.log(slidewidth);
+const imgElement = document.querySelector("img");
+console.log(imgElement);
+console.log(imgElement.width); ///translate the width dynamically
 
+let translate = 0;
 document.querySelector(".left").addEventListener("click", () => {
   if (translate < 0) {
-    translate += 400;
-    sliderElement.style.transform = "translateX(" + translate + "px)";
+    translate += 100;
+    sliderElement.style.transform = "translateX(" + translate + "%)";
   }
+  console.log(translate);
 });
 
 document.querySelector(".right").addEventListener("click", () => {
-  console.log("hello");
-  if (translate > -2500) {
-    translate -= 400;
-    sliderElement.style.transform = "translateX(" + translate + "px)";
+  if (translate > imgElement.width * -7) {
+    translate -= 100;
+    sliderElement.style.transform = "translateX(" + translate + "%)";
+    console.log(translate);
   }
 });

@@ -11,8 +11,14 @@ body {
 }
 
 /* nav bar */
+header {
+  /* width: 100%; */
+  /* margin: 0 0%; */
+}
+
 ul {
   display: flex;
+  list-style-type: none;
 }
 
 ul > li {
@@ -37,10 +43,12 @@ main {
 .carousel {
   border: 1px solid black;
   position: relative;
+  top: 3%;
   width: 99%;
   overflow: hidden;
-  /* max-width: 1200px; */
-  /* margin: auto; */
+  max-width: 99%;
+  /* max-width: 400px; */
+  margin: 0 auto;
 }
 
 .slider {
@@ -51,17 +59,26 @@ main {
   transition: 1s ease;
 }
 
-@media (max-width: 380px) {
-  .slider {
-    flex-direction: column;
-  }
-}
-
 img {
+  border-radius: 100%;
   width: 100%;
+  max-width: 100%;
 }
 .button {
   /* text-align: center; */
   width: fit-content;
   margin: 1% auto;
+}
+
+@media (min-width: 500px) {
+  main {
+    /* display: flex; */
+    /* align-items: baseline; */
+  }
+  .carousel {
+    /* max-width: 100%; */
+  }
+}
+
+@media (min-width: 400px) {
 }
